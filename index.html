@@ -61,7 +61,11 @@
       </div>
     </section>
   </header>
-
+  <!-- Trigger button -->
+  <div class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Subscribe to my newsletter!
+  </button>
+</div>
   <!-- main content -->
   <main>
     <!-- About section links to #about href in navbar -->
@@ -190,7 +194,33 @@
       </div>
     </div>
    </footer>
-
+   <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Subscribe</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body container">
+        Join my newsletter for the latest updates on my projects, coding tips, and industry insights delivered straight to your inbox.
+          <form class="row g-3">
+            <div class="col-lg-6">
+              <label for="name" class="form-label">Name</label>
+              <input class="form-control" id="name" type="text" placeholder="" aria-label="default input example">
+            </div>
+            <div class="col-lg-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+              </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign up!</button>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Bootstrap JS Script-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
